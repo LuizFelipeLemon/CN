@@ -1,4 +1,4 @@
-# Utilizando MMQ e EDO's
+# Utilizando MMQ e EDO's :underage:
 
 Tempos de cada Frame
 1. 00:00.434
@@ -17,7 +17,7 @@ Tempos de cada Frame
 Fr = 30 FPs
 h = 4/30 = 0.13333333
 
-## Rampa
+## Rampa :roller_coaster:
 
 P1(95,277)
 P2(708,246)
