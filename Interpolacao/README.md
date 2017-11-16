@@ -43,7 +43,7 @@ plot(x(1):0.01:x(length(x)),s','b')
 
 cont
 
-#Vetores função Superior Par a par
+##Vetores função Superior Par a par
 
 x =[130 200 270 340 410 480 550 620 690];
  
@@ -62,7 +62,7 @@ for pos = 1:8
     plot(x(pos):0.01:x(pos+1),v','r')
 
 end
-#Vetores função Superior 3 a 3
+##Vetores função Superior 3 a 3
 
 x =[130 200 270 340 410 480 550 620 690];
  
@@ -82,6 +82,36 @@ for pos = 1:2:9
 
 end
 
+##Vetores função Superior 4 a 4
+
+x =[130 200 270 340 410 480 550 620 690];
+ 
+y = [404 430 325 422 427 335 374 470 350];
+
+
+s=0;
+v=0;
+matplot(img)
+for pos = 1:3:7
+    cont=1;
+    pos
+    for i=x(pos):0.01:x(pos+3)
+        v(cont) = lagrange(x(pos:pos+3),y(pos:pos+3),i);
+        cont=cont+1;
+    end
+    plot(x(pos:pos+3),y(pos:pos+3),'.r')
+    plot(x(pos):0.01:x(pos+3),v','r')
+
+end
+cont=1;
+pos = 7
+v=0;
+for i=x(pos):0.01:x(pos+2)
+    v(cont) = lagrange(x(pos:pos+2),y(pos:pos+2),i);
+    cont=cont+1;
+end
+plot(x(pos:pos+2),y(pos:pos+2),'.r')
+plot(x(pos):0.01:x(pos+2),v','r')
 
 # Inferior
 plot(130,404,'.o','markersize',10)
@@ -95,7 +125,7 @@ plot(620,179,'.o','markersize',10)
 plot(687,350,'.o','markersize',10)
 
 
-#Vetores função Inferior
+##Vetores função Inferior
 
 x =[130 200 270 340 410 480 550 620 687];
  
@@ -113,7 +143,7 @@ plot(x,y,'.r')
 plot(x(1):0.01:x(length(x)),s','r')
 plot(x(1):0.01:x(length(x)),v','b')
 
-#Vetores função Inferior Par a par
+##Vetores função Inferior Par a par
 
 x =[130 200 270 340 410 480 550 620 690];
  
@@ -133,7 +163,7 @@ for pos = 1:8
 
 end
 
-#Vetores função Inferior 3 a 3
+##Vetores função Inferior 3 a 3
 
 x =[130 200 270 340 410 480 550 620 690];
  
@@ -153,7 +183,7 @@ for pos = 1:2:9
 
 end
 
-#Vetores função Inferior 4 a 4
+##Vetores função Inferior 4 a 4
 
 x =[130 200 270 340 410 480 550 620 690];
  
@@ -162,7 +192,7 @@ y = [404 227 35 42 50 57 63 179 350];
 s=0;
 v=0;
 matplot(img)
-for pos = 1:3:8
+for pos = 1:3:7
     cont=1;
     pos
     for i=x(pos):0.01:x(pos+3)
@@ -173,7 +203,15 @@ for pos = 1:3:8
     plot(x(pos):0.01:x(pos+3),v','r')
 
 end
-
+cont=1;
+pos = 7
+v=0;
+for i=x(pos):0.01:x(pos+2)
+    v(cont) = lagrange(x(pos:pos+2),y(pos:pos+2),i);
+    cont=cont+1;
+end
+plot(x(pos:pos+2),y(pos:pos+2),'.r')
+plot(x(pos):0.01:x(pos+2),v','r')
 
 
 
