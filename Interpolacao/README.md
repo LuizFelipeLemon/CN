@@ -132,16 +132,16 @@ x =[130 200 270 340 410 480 550 620 687];
 y = [404 227 35 42 50 57 63 179 350];
 
 cont=1;
-s=0;
-v=0;
+inf=0;
+
 for i=x(1):0.01:x(length(x)) 
-    s(cont) = newton(x,y,i);    
+    inf(cont) = newton(x,y,i);    
     cont=cont+1;
 end
 matplot(img)
 plot(x,y,'.r')
-plot(x(1):0.01:x(length(x)),s','r')
-plot(x(1):0.01:x(length(x)),v','b')
+plot(x(1):0.01:x(length(x)),inf','r')
+
 
 ##Vetores função Inferior Par a par
 
