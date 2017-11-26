@@ -54,15 +54,15 @@ a = mmq(t,x,2);
 
 >a  = 
 >
->   124.66413
->  -128.75248
->   228.43345
+>   124.66413 
+>   -128.75248 
+>    228.43345
 
 2*Ax = 228.43345 **->** Ax = 114.21672
 
 plot(p,a(1) + a(2).*p + a(3).*(p.^2),'r')
 
-![Aproximação por MMQ](https://octodex.github.com/images/yaktocat.png)
+![Aproximação por MMQ](https://github.com/LuizFelipeLemon/CN/blob/master/MMQ%2BEDO/MMQ/x(t).png)
 
 #### y=a0+a1*t+(a2*t^2)/2
 
@@ -74,14 +74,14 @@ a = mmq(t,y,2);
 
 >a  = 
 >
->   307.70819
->  -14.871749
->  -2.8316649
+>   307.70819 
+>   -14.871749 
+>   -2.8316649
 
 2*Ay = -2.8316649 **->** Ay = -1.4158324
 
 plot(p,a(1) + a(2).*p + a(3).*(p.^2),'r')
 
-![Aproximação por MMQ](https://octodex.github.com/images/yaktocat.png)
+![Aproximação por MMQ](https://github.com/LuizFelipeLemon/CN/blob/master/MMQ%2BEDO/MMQ/y(t).png)
 
 A = sqrt(Ax^2 + Ay^2) **->**  A  = 114.2255
