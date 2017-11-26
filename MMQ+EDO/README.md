@@ -43,7 +43,10 @@ teta = 0.0342443566499938381959
 
  A = -k * g * sin(teta)
 
-Calcularemos as componentes da aceleração Ax e Ay criando um vetor de coordenadas e aproximando a um polinômio do tipo: x=a0+a1*t+(a2*t^2)/2; [Código da aproximação MMQ](https://github.com/LuizFelipeLemon/CN/tree/master/MMQ+EDO/MMQ)
+Calcularemos as componentes da aceleração Ax e Ay criando um vetor de coordenadas e aproximando a um polinômio do tipo: x=a0+a1*t+(a2*t^2)/2; [Código da aproximação MMQ](https://github.com/LuizFelipeLemon/CN/blob/master/MMQ%2BEDO/MMQ/mmq.sci)
 
-x = [116 125 144 173 210 257 313 378 449 525 611 701];
-y = 
+t = [0.434 0.567 0.7 0.833 0.966 1.1 1.233 1.357 1.5 1.636 1.767 1.9]
+x = [116 125 144 173 210 257 313 378 449 525 611 701]; 
+plot(t,x,'o');
+
+a = mmq(t,x,2);
