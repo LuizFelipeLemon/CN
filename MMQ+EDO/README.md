@@ -39,4 +39,11 @@ teta = 0.0342443566499938381959
 * P10(611,274)
 * P11(701,269)
 
+## Calculando a aceleração no sentido do movimento
 
+ A = -k * g * sin(teta)
+
+Calcularemos as componentes da aceleração Ax e Ay criando um vetor de coordenadas e aproximando a um polinômio do tipo: x=a0+a1*t+(a2*t^2)/2; [Código da aproximação MMQ](https://github.com/LuizFelipeLemon/CN/tree/master/MMQ+EDO/MMQ)
+
+x = [116 125 144 173 210 257 313 378 449 525 611 701];
+y = 

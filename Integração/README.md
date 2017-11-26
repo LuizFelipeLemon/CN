@@ -61,3 +61,16 @@ Integramos o resultado desta multiplicação.
  Xc  = 
 
    414.12689
+
+Calculamos agr o numerador do Yc
+> num = trap(130,690,length(fq)-1,fq)
+ num  = 
+
+   46465689.
+
+> Yc = num/149051.5
+ Yc  = 
+
+   311.74251
+
+   (414.1,311.7)
